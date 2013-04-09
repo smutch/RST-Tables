@@ -42,7 +42,7 @@ def create_line(columns, widths):
         >>> create_line(['nombre', 'apellido'], [7, 10])
         '| nombre  | apellido   |'
     """
-    
+
     line = zip(columns, widths)
     result = []
 
@@ -147,7 +147,7 @@ def extract_table(buffer, top, bottom):
 
 def extract_words_as_lists(buffer, top, bottom):
     "Genera una lista de palabras para crear una lista."
-    
+
     lines = buffer[top:bottom+1]
     return [create_separators_removing_spaces(line).split('|') for line in lines]
 
@@ -197,8 +197,7 @@ def CreateTable():
 
 EOF
 
-map ,,c :python CreateTable()<CR>
-map ,,f :python FixTable()<CR>
-
+noremap <leader>rc :python CreateTable()<CR>
+noremap <leader>rf :python FixTable()<CR>
 
 endif
