@@ -4,8 +4,8 @@ This plugin allows to create and edit restructuredText tables easily.
 
 Its adds two new commands:
 
-    ,,c  ->  Creates a new restructuredText table.
-    ,,f  ->  Fix table columns in a table.
+    <leader>rc  ->  Creates a new restructuredText table.
+    <leader>rf  ->  Fix table columns in a table.
 
 For example, if you have a paragraph with data like this:
 
